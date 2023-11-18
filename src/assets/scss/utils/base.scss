@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+@font-face {
+	font-family: "MantouSans-Regular";
+	// 下面的路徑要放「絕對路徑」，否則會出404error
+	src: url("@/assets/fonts/MantouSans-Regular.ttf");
+}
+
+.mantou {
+	font-family: "MantouSans-Regular", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+	background-color: var(--bg, #fdfcfb);
+	// background-color: #da7d4a;
+	// line-height: 100%;
+}
+.cancel {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.primaryGradient {
+	background: var(--Gradient, linear-gradient(90deg, #e5793b 1.54%, #ff4185 97.86%));
+	// 背景裁切模式為文字
+	-webkit-background-clip: text;
+	// // 將文字顏色指定為透明
+	color: transparent;
+}
+.primaryTheme {
+	background: var(--primary, #da7d4a);
+}
+.textPrimary {
+	background: var(--text-primary-700, #334155);
+}
+.textSecondary {
+	background: var(--gray-500, #94a3b8);
+}
+.bgColorTheme1 {
+	background: var(--bg, #fdfcfb);
+}
+.bgColorTheme2 {
+	background: var(--bg-2, #f7ece1);
+}
